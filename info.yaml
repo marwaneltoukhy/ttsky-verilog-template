@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Two-card poker comparator"
-  author:       ""      # Your name
+  author:       "Marwan"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Compares two 2-card poker hands (pair vs high card); outputs winner flags on dedicated outputs."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc

@@ -8,6 +8,17 @@ See below to get started or for more information, check the [website](https://ti
 1. Edit [Makefile](Makefile) and modify `PROJECT_SOURCES` to point to your Verilog files.
 2. Edit [tb.v](tb.v) and replace `tt_um_example` with your module name.
 
+### Python version (cocotb)
+
+- **Recommended:** Python **3.12** or **3.13** — `pip install -r requirements.txt` works as usual.
+- **Python 3.14+:** cocotb 2.0.1 refuses the version unless you opt in (it still builds and runs for many setups):
+
+  ```sh
+  COCOTB_IGNORE_PYTHON_REQUIRES=1 pip install -r requirements.txt
+  ```
+
+- **`make: cocotb-config: Command not found`:** activate the venv you used for pip, or put it first on `PATH`, e.g. `PATH="$(pwd)/../venv/bin:$PATH" make` from the `test/` directory.
+
 ## How to run
 
 To run the RTL simulation:

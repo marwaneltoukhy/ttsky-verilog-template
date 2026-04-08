@@ -1,2 +1,5 @@
+# On Python 3.14+, cocotb 2.0.1’s metadata caps at 3.13; install still works:
+#   COCOTB_IGNORE_PYTHON_REQUIRES=1 pip install -r requirements.txt
+# Prefer Python 3.12 or 3.13 if you want an unmodified pip install.
 pytest==8.4.2
 cocotb==2.0.1
